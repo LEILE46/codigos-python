@@ -3,11 +3,10 @@ import tkinter as tk
 fila_menu=[]
 def opcao_adicionar():
     
-    nome=fila_menu.get()
+    nome=entry_menu.get()
     if nome:
         fila_menu.append(nome)
         label_resultado.config(text=f"{nome} foi adicionado.")
-        fila_menu.set("") 
 
 def remover_nome():
     if fila_menu:
