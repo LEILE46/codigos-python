@@ -3,7 +3,6 @@ import tkinter as tk
 fila_item=["caramelo","pitbull","chowchow"]
 
 
-
 def pesquisar_na_fila():
     raça= entrada.get()
     if raça in fila_item:
@@ -20,7 +19,7 @@ janela.geometry("600x400")
  
 entrada = tk.Entry(janela)
 entrada.pack(pady=10)
- 
+
  
 pesquisar_button = tk.Button(janela, text="Pesquisar Tarefa na Fila", command=pesquisar_na_fila)
 pesquisar_button.pack(pady=5)

@@ -10,9 +10,6 @@ def remover_produto():
        label_comprando.config(text= "fila vazia")
 
 
-
-
-
 janela= tk.Tk()
 janela.title("fila de compras")
 
