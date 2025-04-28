@@ -15,7 +15,7 @@ def mostrar_media():
 
 
 label_notas = tk.Label(janela, text=f"Notas: {tupla_notas}")
-label_notas.pack(pady=10)
+label_notas.grid(column=2,row=2,pady=30,sticky="n",padx=20)
 botao_notas=tk.Button(janela, text="exibir media alunos",command=mostrar_media)
 botao_notas.grid(column=1,row=1,ipady=20)
 

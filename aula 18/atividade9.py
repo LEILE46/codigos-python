@@ -12,7 +12,7 @@ def junta_tupla():
 
 
 
-botao_numeros=tk.Button(janela, text="exibir dados aluno ",command=junta_tupla)
+botao_numeros=tk.Button(janela, text="exibir numeros ",command=junta_tupla)
 botao_numeros.grid(column=1,row=1,ipady=20)
 
 label_numero=tk.Label(janela,text="")

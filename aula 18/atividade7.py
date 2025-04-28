@@ -12,8 +12,7 @@ def ordena_nome():
 
 
 
-
-botao_letras=tk.Button(janela, text="exibir nomes ",command=ordena_nome)
+botao_letras=tk.Button(janela, text="exibir letras ",command=ordena_nome)
 botao_letras.grid(column=1,row=1,ipady=20)
 
 label_nome=tk.Label(janela,text="")
