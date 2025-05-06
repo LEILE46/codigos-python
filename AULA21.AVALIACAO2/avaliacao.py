@@ -12,8 +12,9 @@ def calcular_media():
             resultado_label.config(text="Erro: insira exatamente 4 notas.", fg="black")
             return
         
-    
+        
         media = sum(notas) / len(notas)
+
 
         media_necessaria = float(entry_media_necessaria.get())
         
@@ -24,7 +25,7 @@ def calcular_media():
             status = "Reprovado"
             cor = "red"
         
-        resultado_label.config(text=f"{nome} - Média: {media:.2f} - Média necessária: {media_necessaria} - {status}", fg=cor)
+        resultado_label.config(text=f"{nome} - Média: {media} - Média necessária: {media_necessaria} - {status}", fg=cor)
     except ValueError:
         resultado_label.config(text="Erro: insira apenas números válidos nas notas.", fg="black")
 
