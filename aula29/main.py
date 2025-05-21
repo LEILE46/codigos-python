@@ -1,7 +1,9 @@
-from servicos.db import criar_tabela, inserir_livros_iniciais
-from telas.inteface import exibir_livros
+from servicos.livro_serviços import conectar, inserir_livros
+from telas.inteface import iniciar_interface
 
 if __name__ == "__main__":
-    criar_tabela()
-    inserir_livros_iniciais()
-    exibir_livros()
+    conn, cursor = conectar()
+    inserir_livros(cursor, conn)
+    iniciar_interface(cursor, conn)
+    cursor.close()
+    conn.close()
