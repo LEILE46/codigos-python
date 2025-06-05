@@ -10,6 +10,7 @@ class Consumo:
 
         if consumo_restante > 5:
             valor_agua += 5 * 1.16  
+
             consumo_restante -= 5
         elif consumo_restante > 0:
             valor_agua += consumo_restante * 1.16
